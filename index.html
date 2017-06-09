@@ -499,18 +499,18 @@
                 </div>
             </div>
 
-            <div class="footer-menu footer-menu-d">
+            <div class="footer-menu footer-menu-d js-sub-menu">
                 <div class="footer-menu__block">
                     <p class="footer-menu__ttl ">О компании</p>
                     <ul class="footer-menu__list">
                         <li class="footer-menu__item">
-                            <a href="about.html#history" class="footer-menu__link">История</a>
+                            <a href="about.html#history2" class="footer-menu__link">История</a>
                         </li>
                         <li class="footer-menu__item">
-                            <a href="about.html#princip" class="footer-menu__link">Принципы</a>
+                            <a href="about.html#princip2" class="footer-menu__link">Принципы</a>
                         </li>
                         <li class="footer-menu__item">
-                            <a href="about.html#security" class="footer-menu__link">Охрана труда</a>
+                            <a href="about.html#security2" class="footer-menu__link">Охрана труда</a>
                         </li>
                         <li class="footer-menu__item">
                             <a href="#" class="footer-menu__link">Контакты</a>
@@ -522,7 +522,7 @@
                     <p class="footer-menu__ttl ">Технологии</p>
                     <ul class="footer-menu__list">
                         <li class="footer-menu__item">
-                            <a href="about.html#ecology" class="footer-menu__link">Экологический менеджмент</a>
+                            <a href="about.html#ecology2" class="footer-menu__link">Экологический менеджмент</a>
                         </li>
                         <li class="footer-menu__item">
                             <a href="#" class="footer-menu__link">Контроль качества</a>
@@ -546,19 +546,19 @@
                     <p class="footer-menu__ttl ">Наша продукция</p>
                     <ul class="footer-menu__list">
                         <li class="footer-menu__item">
-                            <a href="#" class="footer-menu__link">ESSE Original</a>
+                            <a href="products.html#original" class="footer-menu__link">ESSE Original</a>
                         </li>
                         <li class="footer-menu__item">
-                            <a href="#" class="footer-menu__link">ESSE Premium</a>
+                            <a href="products.html#premium2" class="footer-menu__link">ESSE Premium</a>
                         </li>
                         <li class="footer-menu__item">
-                            <a href="#" class="footer-menu__link">ESSE Exchange</a>
+                            <a href="products.html#exchange2" class="footer-menu__link">ESSE Exchange</a>
                         </li>
                         <li class="footer-menu__item">
-                            <a href="#" class="footer-menu__link">ESSE Cafe</a>
+                            <a href="products.html#cafe2" class="footer-menu__link">ESSE Cafe</a>
                         </li>
                         <li class="footer-menu__item">
-                            <a href="#" class="footer-menu__link">ESSE Mini</a>
+                            <a href="products.html#mini2" class="footer-menu__link">ESSE Mini</a>
                         </li>
                         <li class="footer-menu__item">
                             <a href="#" class="footer-menu__link">ESSE Bloomberg</a>
@@ -635,29 +635,24 @@
                 $('.header-menu').slideUp();
                 $(this).removeClass('active');
             }
-
         });
 
-
-
-        //уменьшение меню
-        var qqq = 736;
+        var t_head = 736;
         $(function(){
             var top = $(this).scrollTop();
-
-            if(top > qqq){
+            if(top > t_head){
                 $('.header-hide-menu').addClass('show');
             }
             $(window).scroll(function(){
                 top = $(this).scrollTop();
-                if (top>qqq) {
+                if (top>t_head) {
                     $('.header-hide-menu').addClass('show');
-
                 } else {
                     $('.header-hide-menu').removeClass('show');
                 }
             });
         });
+
     });
 
 </script>

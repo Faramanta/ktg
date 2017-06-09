@@ -42,7 +42,7 @@
                 </a>
             </div>
     </header>
-    <nav class="sub-menu-about" >
+    <nav class="sub-menu-about js-menu-about" >
         <ul class="sub-menu__list">
             <li class="sub-menu__item ">
                 <a href="#ktg" class="sub-menu__link active">KT&G</a>
@@ -81,6 +81,7 @@
                 </div>
             </section>
 
+            <a id="history2"></a>
             <section class="about-section" id="history">
                 <h2 class="main__ttl main__ttl--dark">История компании</h2>
                     <div class="about__tbl">
@@ -133,6 +134,7 @@
                     </div>
             </section>
 
+            <a id="princip2"></a>
             <section class="about-section" id="princip">
                 <h2 class="main__ttl main__ttl--dark">Наши принципы</h2>
                 <div class="about-cnt-block clearfix">
@@ -151,6 +153,7 @@
                 </div>
             </section>
 
+            <a id="ecology2"></a>
             <section class="about-section" id="ecology">
                 <h2 class="main__ttl main__ttl--dark">Экологический менеджмент</h2>
                 <p class="about__cnt--big">KT&G активно развивает на своих производствах экологический менеджмент</p>
@@ -165,6 +168,7 @@
                 </div>
             </section>
 
+            <a id="logo2"></a>
             <section class="about-section" id="logo">
                 <h2 class="main__ttl main__ttl--dark">Наш логотип</h2>
                 <p class="about__cnt--big">В 2002 году Korea Tobacco & Ginseng приняла новое название KT&G и полностью сменила фирменный стиль. </p>
@@ -174,6 +178,7 @@
                 <p class="main__cnt">Логотип символизирует наш этичный и открытый подход к бизнесу, нашу заботу о клиентах и экологии.Более того, он олицетворяет наше стремление донести эти ценности до миллионов людей во всем мире, поскольку KT&G стремится расширить свое влияние, став глобальным явлением в мировой табачной промышленности.</p>
             </section>
 
+            <a id="security2"></a>
             <section class="about-section" id="security">
                 <h2 class="main__ttl main__ttl--dark">Охрана труда</h2>
                 <p class="main__cnt">В соответствии с требованиями законодательства Российской Федерации (Федеральный закон от 28.12.2013N 426-ФЗ), компания KT&G систематически проводит оценку условий труда своих сотрудников.</p>
@@ -186,8 +191,8 @@
 </div>
     <footer class="footer footer-in">
         <div class="container">
-            <div class="footer-menu">
-                <div class="footer-menu__block">
+            <div class="footer-menu ">
+                <div class="footer-menu__block js-menu-about">
                     <p class="footer-menu__ttl js-open-menu">О компании</p>
                     <ul class="footer-menu__list">
                         <li class="footer-menu__item">
@@ -205,7 +210,7 @@
                     </ul>
                 </div>
 
-                <div class="footer-menu__block">
+                <div class="footer-menu__block js-menu-about">
                     <p class="footer-menu__ttl js-open-menu">Технологии</p>
                     <ul class="footer-menu__list">
                         <li class="footer-menu__item">
@@ -217,7 +222,7 @@
                     </ul>
                 </div>
 
-                <div class="footer-menu__block">
+                <div class="footer-menu__block ">
                     <p class="footer-menu__ttl js-open-menu">Карьера</p>
                     <ul class="footer-menu__list">
                         <li class="footer-menu__item">
@@ -229,23 +234,23 @@
                     </ul>
                 </div>
 
-                <div class="footer-menu__block">
+                <div class="footer-menu__block ">
                     <p class="footer-menu__ttl js-open-menu">Наша продукция</p>
                     <ul class="footer-menu__list">
                         <li class="footer-menu__item">
-                            <a href="#" class="footer-menu__link">ESSE Original</a>
+                            <a href="products.html#original" class="footer-menu__link">ESSE Original</a>
                         </li>
                         <li class="footer-menu__item">
-                            <a href="#" class="footer-menu__link">ESSE Premium</a>
+                            <a href="products.html#premium2" class="footer-menu__link">ESSE Premium</a>
                         </li>
                         <li class="footer-menu__item">
-                            <a href="#" class="footer-menu__link">ESSE Exchange</a>
+                            <a href="products.html#exchange2" class="footer-menu__link">ESSE Exchange</a>
                         </li>
                         <li class="footer-menu__item">
-                            <a href="#" class="footer-menu__link">ESSE Cafe</a>
+                            <a href="products.html#cafe2" class="footer-menu__link">ESSE Cafe</a>
                         </li>
                         <li class="footer-menu__item">
-                            <a href="#" class="footer-menu__link">ESSE Mini</a>
+                            <a href="products.html#mini2" class="footer-menu__link">ESSE Mini</a>
                         </li>
                         <li class="footer-menu__item">
                             <a href="#" class="footer-menu__link">ESSE Bloomberg</a>
@@ -301,5 +306,8 @@
             }
         });
     });
+
+    jQuery(window).scroll(scroll_active2);
+
 </script>
 </body>

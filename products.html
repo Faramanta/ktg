@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<div class="wrapper wrapper-in">
+<div class="wrapper wrapper-in" id="original">
     <div class="header-cont">
         <header class="header">
             <div class="top-header">
@@ -42,8 +42,8 @@
                 </a>
             </div>
     </header>
-    <nav class="sub-menu">
-        <ul class="sub-menu__list">
+    <nav class="sub-menu js-sub-menu">
+        <ul class="sub-menu__list" >
             <li class="sub-menu__item ">
                 <a href="#original" class="sub-menu__link active">ESSE</a>
             </li>
@@ -69,7 +69,6 @@
         <div class="in-container">
             <div class="small-menu" id="small-menu"></div>
             <section class="prod__list">
-                <a id="original"></a>
                 <article class="prod__row">
                     <div class="prod__item prod__cnt">
                         <h2 class="prod__ttl">ESSE<br>
@@ -425,6 +424,7 @@
                     </div>
                 </article>
 
+                <a id="premium2"></a>
                 <article class="prod__row" id="premium">
                     <div class="prod__item prod__cnt">
                         <h2 class="prod__ttl">ESSE<br>
@@ -642,6 +642,8 @@
                         </div>
                     </div>
                 </article>
+
+                <a id="exchange2"></a>
                 <article class="prod__row" id="exchange">
                     <div class="prod__item prod__cnt">
                         <h2 class="prod__ttl">ESSE<br>
@@ -722,6 +724,7 @@
                     </div>
                 </article>
 
+                <a id="cafe2"></a>
                 <article class="prod__row" id="cafe">
                     <div class="prod__item exchange-w">
                         <h3 class="prod__ttl2">ESSE Exchange W</h3>
@@ -798,6 +801,7 @@
                     </div>
                 </article>
 
+                <a id="mini2"></a>
                 <article class="prod__row" id="mini">
                     <div class="prod__item prod__cnt ">
                         <h2 class="prod__ttl">ESSE <span class="mini">Mini</span></h2>
@@ -1021,18 +1025,18 @@
 </div>
     <footer class="footer footer-in">
         <div class="container">
-            <div class="footer-menu">
+            <div class="footer-menu ">
                 <div class="footer-menu__block">
                     <p class="footer-menu__ttl js-open-menu">О компании</p>
                     <ul class="footer-menu__list">
                         <li class="footer-menu__item">
-                            <a href="about.html#history" class="footer-menu__link">История</a>
+                            <a href="about.html#history2" class="footer-menu__link">История</a>
                         </li>
                         <li class="footer-menu__item">
-                            <a href="about.html#princip" class="footer-menu__link">Принципы</a>
+                            <a href="about.html#princip2" class="footer-menu__link">Принципы</a>
                         </li>
                         <li class="footer-menu__item">
-                            <a href="about.html#security" class="footer-menu__link">Охрана труда</a>
+                            <a href="about.html#security2" class="footer-menu__link">Охрана труда</a>
                         </li>
                         <li class="footer-menu__item">
                             <a href="#" class="footer-menu__link">Контакты</a>
@@ -1044,7 +1048,7 @@
                     <p class="footer-menu__ttl js-open-menu">Технологии</p>
                     <ul class="footer-menu__list">
                         <li class="footer-menu__item">
-                            <a href="about.html#ecology" class="footer-menu__link">Экологический менеджмент</a>
+                            <a href="about.html#ecology2" class="footer-menu__link">Экологический менеджмент</a>
                         </li>
                         <li class="footer-menu__item">
                             <a href="#" class="footer-menu__link">Контроль качества</a>
@@ -1064,30 +1068,29 @@
                     </ul>
                 </div>
 
-                <div class="footer-menu__block">
-                    <p class="footer-menu__ttl js-open-menu">Наша продукция</p>
-                    <ul class="footer-menu__list">
+                <div class="footer-menu__block js-sub-menu">
+                    <p class="footer-menu__ttl ">Наша продукция</p>
+                    <ul class="footer-menu__list js-bot-menu">
                         <li class="footer-menu__item">
-                            <a href="#" class="footer-menu__link">ESSE Original</a>
+                            <a href="#original" class="footer-menu__link">ESSE Original</a>
                         </li>
                         <li class="footer-menu__item">
-                            <a href="#" class="footer-menu__link">ESSE Premium</a>
+                            <a href="#premium" class="footer-menu__link">ESSE Premium</a>
                         </li>
                         <li class="footer-menu__item">
-                            <a href="#" class="footer-menu__link">ESSE Exchange</a>
+                            <a href="#exchange" class="footer-menu__link">ESSE Exchange</a>
                         </li>
                         <li class="footer-menu__item">
-                            <a href="#" class="footer-menu__link">ESSE Cafe</a>
+                            <a href="#cafe" class="footer-menu__link">ESSE Cafe</a>
                         </li>
                         <li class="footer-menu__item">
-                            <a href="#" class="footer-menu__link">ESSE Mini</a>
+                            <a href="#mini" class="footer-menu__link">ESSE Mini</a>
                         </li>
                         <li class="footer-menu__item">
                             <a href="#" class="footer-menu__link">ESSE Bloomberg</a>
                         </li>
                     </ul>
                 </div>
-
                 <div class="footer-menu__block">
                     <p class="footer-menu__ttl js-open-menu">Партнерам</p>
                     <ul class="footer-menu__list">
@@ -1125,7 +1128,6 @@
 <script type="text/javascript" src="js/menu.js"></script>
 <script>
     $(document).ready(function(){
-
         $('.js-open-menu').click(function(){
             if(!$(this).closest('.footer-menu__block').hasClass('active')){
                 $('.footer-menu__block').removeClass('active');
@@ -1136,5 +1138,8 @@
             }
         });
     });
+
+    jQuery(window).scroll(scroll_active);
+
 </script>
 </body>

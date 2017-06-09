@@ -1277,7 +1277,6 @@ ul {
 .form__block {
     border-top: 1px solid #d1d5dd;
     padding: 25px 0 30px;
-
 }
 
 /*форма*/
@@ -1643,15 +1642,26 @@ ul {
     color: rgba(11,32,80,0.6);
     margin-left: 20px;
 }
- {
-    transition: -webkit-transform .3s;
-    transition: transform .3s;
-    color: rgba(11,32,80,0.6);
-    margin-left: 20px;
+
+
+#mini2,
+#cafe2,
+#exchange2,
+#premium2 {
+    display:block;
+    margin-top:-180px;
+    padding-top:180px
 }
 
-
-
+#princip2,
+#history2,
+#logo2,
+#security2,
+#ecology2 {
+    display:block;
+    margin-top:-70px;
+    padding-top:70px
+}
 
 /*help*/
 .mb30 {

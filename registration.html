@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="css/material.indigo-pink.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/datepicker.css">
+    <link rel="stylesheet" href="css/sumoselect.css">
+
 </head>
 <body>
     <div class="wrapper wrapper-in">
@@ -91,8 +93,8 @@
                         <div class="form-reg__line">
                             <div class="form-reg__block">
                                 <p class="form-reg__text">Укажите дату рождения</p>
-                                <span class="input input--first input--akira">
-                                    <input class="input__field input__field--akira datepicker-here"  data-auto-close="true" type="text" id="input-birthday">
+                                <span class="input input--first input--akira add-class">
+                                    <input class="input__field input__field--akira "  data-auto-close="true" type="text" id="input-birthday">
                                     <label class="input__label input__label--akira" for="input-birthday">
                                         <span class="input__label-content input__label-content--akira ">ДД.ММ.ГГ</span>
                                     </label>
@@ -159,6 +161,15 @@
                                     <label class="input__label input__label--akira" for="input-brand">
                                         <span class="input__label-content input__label-content--akira">Марка</span>
                                     </label>
+                                    <div class="SumoSelect " >
+                                        <select name="marka">
+                                           <option value="Москва">Москва</option>
+                                           <option value="Санкт-Петербург">Санкт-Петербург</option>
+                                           <option value="Ярославль">Ярославль</option>
+                                        </select>
+                                    </div>
+
+
                                 </span>
                             </div>
                             <div class="form-reg__block">
@@ -195,13 +206,13 @@
                     <p class="footer-menu__ttl">О компании</p>
                     <ul class="footer-menu__list">
                         <li class="footer-menu__item">
-                            <a href="about.html#history" class="footer-menu__link">История</a>
+                            <a href="about.html#history2" class="footer-menu__link">История</a>
                         </li>
                         <li class="footer-menu__item">
-                            <a href="about.html#princip" class="footer-menu__link">Принципы</a>
+                            <a href="about.html#princip2" class="footer-menu__link">Принципы</a>
                         </li>
                         <li class="footer-menu__item">
-                            <a href="about.html#security" class="footer-menu__link">Охрана труда</a>
+                            <a href="about.html#security2" class="footer-menu__link">Охрана труда</a>
                         </li>
                         <li class="footer-menu__item">
                             <a href="#" class="footer-menu__link">Контакты</a>
@@ -213,7 +224,7 @@
                     <p class="footer-menu__ttl">Технологии</p>
                     <ul class="footer-menu__list">
                         <li class="footer-menu__item">
-                            <a href="about.html#ecology" class="footer-menu__link">Экологический менеджмент</a>
+                            <a href="about.html#ecology2" class="footer-menu__link">Экологический менеджмент</a>
                         </li>
                         <li class="footer-menu__item">
                             <a href="#" class="footer-menu__link">Контроль качества</a>
@@ -237,19 +248,19 @@
                     <p class="footer-menu__ttl">Наша продукция</p>
                     <ul class="footer-menu__list">
                         <li class="footer-menu__item">
-                            <a href="#" class="footer-menu__link">ESSE Original</a>
+                            <a href="products.html#original" class="footer-menu__link">ESSE Original</a>
                         </li>
                         <li class="footer-menu__item">
-                            <a href="#" class="footer-menu__link">ESSE Premium</a>
+                            <a href="products.html#premium2" class="footer-menu__link">ESSE Premium</a>
                         </li>
                         <li class="footer-menu__item">
-                            <a href="#" class="footer-menu__link">ESSE Exchange</a>
+                            <a href="products.html#exchange2" class="footer-menu__link">ESSE Exchange</a>
                         </li>
                         <li class="footer-menu__item">
-                            <a href="#" class="footer-menu__link">ESSE Cafe</a>
+                            <a href="products.html#cafe2" class="footer-menu__link">ESSE Cafe</a>
                         </li>
                         <li class="footer-menu__item">
-                            <a href="#" class="footer-menu__link">ESSE Mini</a>
+                            <a href="products.html#mini2" class="footer-menu__link">ESSE Mini</a>
                         </li>
                         <li class="footer-menu__item">
                             <a href="#" class="footer-menu__link">ESSE Bloomberg</a>
@@ -294,6 +305,7 @@
 <script type="text/javascript" src="js/menu.js"></script>
 <script type="text/javascript" src="js/classie.js"></script>
 <script type="text/javascript" src="js/datepicker.js"></script>
+<script type="text/javascript" src="js/jquery.sumoselect.min.js"></script>
 <script>
     (function() {
         if (!String.prototype.trim) {
@@ -323,6 +335,19 @@
             }
         }
     })();
+
+    $(document).ready(function(){
+        $('select[name="marka"]').SumoSelect();
+    });
+    $(document).on('click', '.act-open-popup', function(){
+        $(this).find('div.form-popup').toggle();
+    });
+
+    $('#input-birthday').datepicker({
+        onSelect: function(fd, d, picker) {
+            $('.add-class').addClass('input--filled');
+        }
+    });
 
 
 </script>
