@@ -2,180 +2,666 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>KT&G</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/material.indigo-pink.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Profi.travel</title>
-
 </head>
 <body>
+<div class="wrapper">
     <header class="header">
-        <div class="container">
-            <img src="img/logo.png" class="logo">
-            <p class="header-content">Получи ваучеры в знаменитый торговый центр Парижа<br>и окунись в атмосферу изысканности и чуда</p>
-            <button class="btn js-btn">Получить ваучеры</button>
-            <p class="header-content header-content--pink">А почему ваучеры в Galeries Lafayette?</p>
-            <div class="arrow arrow--pink"></div>
-
+        <div class="top-header">
+            <div class="header__logo">
+                <img src="img/logo.png">
+            </div>
+            <a href="registration.html" class="header__auth">
+                <img src="img/user.png" class="header__auth-icon">
+                <p class="header__auth-username">Личный кабинет</p>
+            </a>
+            <a href="#" class="burger js-open-topmenu">
+                <div class="burger-top"></div>
+                <div class="burger-mid"></div>
+                <div class="burger-bot"></div>
+            </a>
+            <div class="header-menu">
+                <div class="header-menu__list">
+                    <a href="about.html" class="header-menu__item about">О компании</a>
+                    <a href="products.html" class="header-menu__item product">Наша продукция</a>
+                    <a href="#" class="header-menu__item tecnology">Технологии</a>
+                    <a href="#" class="header-menu__item job">Работайте с нами</a>
+                    <a href="#" class="header-menu__item contact">Контакты</a>
+                    <a href="#" class="header-menu__item auth">Личный кабинет</a>
+                </div>
+            </div>
         </div>
+
+
+
     </header>
-
-    <div>
-        <section class="content-section ">
-            <div class="container about">
-                <img src="img/photo.png" class="about__photo">
-                <div class="about__cnt-block">
-                    <p class="about__text"><span class="about__text--bold">Galeries Lafayette Paris Haussmann</span> — торговый центр в самом сердце Парижа. Его история началась в 1894 году. И до сих пор туристы восхищаются роскошным стеклянным куполом Жака Грюбера с многочисленной мозаикой.</p>
-                    <p class="about__text">В 50-х годах здесь пела сама Эдит Пиаф. А в конце 90-х Михаил Горбачев провел здесь автограф-сессию.</p>
-
-                    <p class="about__text">Перед Рождеством в галерее появляется огромная дизайнерская ёлка. В этом году все украшения рождественской ели сделаны из бумаги. Это уникальное произведение искусства, созданное художником Лоренцо Папасом.</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="content-section pink">
-            <div class="container container--pink">
-                <p class="pink__text">Получи подарок от Galeries Lafayette —<br>2 ваучера, которые можно использовать самому или подарить туристу,<br>который собирается в Париж!</p>
-                <p class="pink__text pink__text--white">А что входит в эти ваучеры?</p>
-                <div class="arrow arrow--white"></div>
-            </div>
-        </section>
-
-        <section class="content-section ">
-            <div class="container voucher">
-                <p class="voucher__text">Это эксклюзивные ваучеры, которые дают возможность получить приятные подарки</p>
-
-                <div class="voucher__block">
-                    <div class="voucher__box">
-                        <div class="voucher__box-ttl">Ваучер №1</div>
-                        <img src="img/bear.jpg" class="voucher__box-img">
-                        <p class="voucher__box-text">Подарок — фирменный талисман арктического нового года</p>
-                        <p class="voucher__box-text">Скидка 10%</p>
-                        <p class="voucher__box-descr">Этот эксклюзивный маленький плюшевый белый мишка с большим сердцем стал талисманом волшебного арктического Рождества в Galeries Lafayette. </p>
-                    </div>
-
-                    <div class="voucher__box">
-                        <div class="voucher__box-ttl">Ваучер №1</div>
-                        <img src="img/parfume.jpg" class="voucher__box-img">
-                        <p class="voucher__box-text">Подарок – духи марки Atelier Cologne</p>
-                        <p class="voucher__box-text">Приглашение в премиум-лаундж Concierge</p>
-                        <p class="voucher__box-descr">Изысканный флакон из коллекции самых редких и самых драгоценных ароматов в мире парфюмерного искусства, украшенный драгоценными металлами.</p>
-                    </div>
-                </div>
-                <button class="btn mb15 js-btn">Получить ваучеры</button>
-                <a href="#" class="voucher__link">Подробные условия акции</a>
-            </div>
-        </section>
-
-        <section class="content-section pink">
-            <div class="container container--pink">
-                <p class="pink__text mb40">Для того, чтобы воспользоваться ваучерами,<br>совершайте покупки в Galeries Lafayette в Париже. </p>
-                <p class="pink__text pink__text--white">А какие бренды представлены в Galeries Lafayette? </p>
-                <div class="arrow arrow--white"></div>
-            </div>
-        </section>
-
-        <section class="content-section brands">
-            <div class="container">
-                <p class="voucher__text">О, бренды! Их очень много и они слишком известны, чтобы не быть у вас на слуху…. </p>
-                <p class="brands__descr">Более 700 известных своим качеством и дизайном брендов, обладать которыми хочет каждый: <br>ARMANI, ANNE FONTAINE, BURBERRY, CALVIN KLEIN, CHANEL, GUCCI, DOLCE & GABBANA, L’ORÉAL, LACOSTE, LOUIS VUITTON, MARC O’ POLO, MAJE, NAF NAF, PACO RABANNE, ROBERTO CAVALLI, SANTONI, THE KOOPLES, ZARA, ZADIG & VOLTAIRE и другие.</p>
-            </div>
-        </section>
-
-        <section class="content-section img">
-            <img src="img/items.png" class="voucher__img">
-        </section>
+    <div class="header-hide-menu">
+        <div class="header-hide-menu__logo">
+            <img src="img/logo-small.png">
+        </div>
+        <nav class="in-menu">
+            <ul class="in-menu__list">
+                <li class="in-menu__item">
+                    <a href="about.html" class="in-menu__link ">О компании</a>
+                </li>
+                <li class="in-menu__item">
+                    <a href="products.html" class="in-menu__link ">Наша продукция</a>
+                </li>
+                <li class="in-menu__item">
+                    <a href="#" class="in-menu__link ">Технологии</a>
+                </li>
+                <li class="in-menu__item">
+                    <a href="#" class="in-menu__link ">Работайте с нами</a>
+                </li>
+                <li class="in-menu__item">
+                    <a href="#" class="in-menu__link ">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+        <a href="#" class="header-hide-menu__auth">
+            <img src="img/user.png" class="header__auth-icon">
+        </a>
     </div>
+
+    <main class="main">
+        <section class="main-section main-top">
+            <div class="main-top__video">
+                <img src="img/video.jpg" class="main-top__img">
+                <div class="video__cnt">
+                    <h2 class="main__ttl">Путь к успеху с KT&amp;G</h2>
+                    <p class="main-top__cnt">Профессионалы, стремящиеся к успеху, выбирают лидера индустрии.</p>
+                </div>
+            </div>
+            <div class="video__cnt-m">
+                <h2 class="main__ttl">Путь к успеху с KT&amp;G</h2>
+                <p class="main-top__cnt">Профессионалы, стремящиеся к успеху, выбирают лидера индустрии.</p>
+            </div>
+        </section>
+
+        <nav class="main-menu">
+            <ul class="main-menu__list">
+                <li class="main-menu__item">
+                    <a href="about.html" class="main-menu__link about">
+                        <img src="img/about.png">
+                        <p class="main-menu__cnt ">О компании</p>
+                    </a>
+                </li>
+                <li class="main-menu__item">
+                    <a href="products.html" class="main-menu__link product">
+                        <img src="img/pack.png">
+                        <p class="main-menu__cnt ">Наша продукция</p>
+                    </a>
+                </li>
+                <li class="main-menu__item">
+                    <a href="#" class="main-menu__link tecnology">
+                        <img src="img/tech.png">
+                        <p class="main-menu__cnt ">Технологии</p>
+                    </a>
+                </li>
+                <li class="main-menu__item">
+                    <a href="#" class="main-menu__link job">
+                        <img src="img/job.png">
+                        <p class="main-menu__cnt ">Работайте с нами</p>
+                    </a>
+                </li>
+                <li class="main-menu__item">
+                    <a href="#" class="main-menu__link contact">
+                        <img src="img/mark.png">
+                        <p class="main-menu__cnt ">Контакты</p>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <section class="main-section main-section--grey">
+            <div class="container">
+                <h2 class="main__ttl main__ttl--dark">События и новости</h2>
+                <p class="main__cnt">Следите за последними обновлениями.</p>
+            </div>
+        </section>
+
+        <section class="main-section main-action">
+            <a href="#" class="main-action__link">
+                <div class="main-action__tbl">
+                    <div class="main-action__cell">
+                    </div>
+                    <div class="main-action__cell">
+                        <p class="main-action__mark">Акция</p>
+                        <h3 class="main-action__ttl2">Выгода от KT&amp;G</h3>
+                        <p class="main__cnt mb30">Компания KT&amp;G предлагает эксклюзивные условия оптовым поставщикам.</p>
+                        <p class="main__more">Подробнее</p>
+                    </div>
+                </div>
+            </a>
+        </section>
+
+
+        <section class="main-section main-news">
+            <div class="container">
+                <div class="news__tbl">
+                    <div class="news__container">
+                        <a href="#" class="news-block">
+                            <p class="news__data">02.06.2017</p>
+                            <h4 class="news__ttl">Рынок супертонких сигарет будет расти</h4>
+                            <p class="news__cnt">Опубликован отчет о глобальных продажах и темпах роста рынка супертонких сигарет с 2011 по 2021 год.</p>
+                            <p class="main__more">Читать подробнее</p>
+                        </a>
+                        <a href="#" class="news-block">
+                            <p class="news__data">31.05.2017</p>
+                            <h4 class="news__ttl">Автоматизация мобильной торговли табачной продукцией</h4>
+                            <p class="news__cnt">Проект автоматизации эксклюзивных дистрибьюторов KT&amp;G Rus стартовал в начале 2011 года.</p>
+                            <p class="main__more">Читать подробнее</p>
+                        </a>
+                        <a href="#" class="news-block">
+                            <p class="news__data">21.05.2017</p>
+                            <h4 class="news__ttl">У KT&amp;G есть потенциал для 20% роста</h4>
+                            <p class="news__cnt">Аналитики предсказывают рост стоимости акций компании после запуска линейки электронных сигарет.</p>
+                            <p class="main__more">Читать подробнее</p>
+                        </a>
+                    </div>
+
+                    <div class="news__container">
+                        <a href="#" class="news-block">
+                            <p class="news__data">18.05.2017</p>
+                            <h4 class="news__ttl">KT&amp;G на рынке «бездымного» табака</h4>
+                            <p class="news__cnt">Компания готовится к выходу на рынок с альтернативой традиционным сигаретам.</p>
+                            <p class="main__more">Читать подробнее</p>
+                        </a>
+                        <a href="#" class="news-block">
+                            <p class="news__data">17.03.2017</p>
+                            <h4 class="news__ttl">KT&amp;G расширяет влияние</h4>
+                            <p class="news__cnt">В течение 2016 года KT&amp;G продала 46,5 млрд сигарет за рубежом.</p>
+                            <p class="main__more">Читать подробнее</p>
+                        </a>
+                        <a href="#" class="news-block">
+                            <div class="news__data">19.01.2017</div>
+                            <div class="news__ttl">Отличные результаты в 4-м квартале 2016 года</div>
+                            <div class="news__cnt">KT&amp;G опубликовала отчет о своих доходах в 4-м квартале 2016 года.</div>
+                            <div class="main__more">Читать подробнее</div>
+                        </a>
+                    </div>
+                </div>
+
+                <button class="news__btn mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Больше новостей</button>
+            </div>
+        </section>
+
+        <section class="main-section main-vacansy">
+            <div class="container">
+                <h2 class="main__ttl main__ttl--dark">Текущие вакансии</h2>
+                <p class="main__cnt">Работайте в нашей компании.</p>
+
+                <div class="vacansy__list">
+                    <article class="vacansy__item">
+                        <div class="vacansy__top">
+                            <div class="vacansy__ttl">Младший оператор производственной линии</div>
+                            <button class="vacansy__close active js-close"></button>
+                        </div>
+                        <div class="vacansy__descr">
+                            <div class="vacansy__cnt-block">
+                                <p class="vacansy__cnt vacansy__cnt--bold">Требования</p>
+                                <ul>
+                                    <li class="vacansy__cnt-item">
+                                        <p class="vacansy__cnt-text">Техническое образование или опыт работы на производстве</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="vacansy__cnt-block">
+                                <div class="vacansy__cnt vacansy__cnt--bold">Условия труда:</div>
+                                <ul>
+                                    <li class="vacansy__cnt-item">
+                                        <p class="vacansy__cnt-text">Оформление по ТК РФ</p>
+                                    </li>
+                                    <li class="vacansy__cnt-item">
+                                        <p class="vacansy__cnt-text">Профессиональный и карьерный рост</p>
+                                    </li>
+                                    <li class="vacansy__cnt-item">
+                                        <p class="vacansy__cnt-text">Достойная заработная плата</p>
+                                    </li>
+                                    <li class="vacansy__cnt-item">
+                                        <p class="vacansy__cnt-text">Полный соц. пакет (ДМС и др.)</p>
+                                    </li>
+                                    <li class="vacansy__cnt-item">
+                                        <p class="vacansy__cnt-text">Корпоративное питание</p>
+                                    </li>
+                                    <li class="vacansy__cnt-item">
+                                        <p class="vacansy__cnt-text">Корпоративный транспорт</p>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <button class=" mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent vacansy__btn">Откликнуться на вакансию</button>
+                            <button class="vacansy__btn vacansy__btn--grey">Скачать анкету соискателя</button>
+                        </div>
+                    </article>
+
+                    <article class="vacansy__item">
+                        <div class="vacansy__top">
+                            <div class="vacansy__ttl">Младший электроник</div>
+                            <button class="vacansy__close js-close"></button>
+                        </div>
+                        <div class="vacansy__descr">
+                            <div class="vacansy__cnt-block">
+                                <p class="vacansy__cnt vacansy__cnt--bold">Требования</p>
+                                <ul>
+                                    <li class="vacansy__cnt-item">
+                                        <p class="vacansy__cnt-text">Техническое образование или опыт работы на производстве</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="vacansy__cnt-block">
+                                <div class="vacansy__cnt vacansy__cnt--bold">Условия труда:</div>
+                                <ul>
+                                    <li class="vacansy__cnt-item">
+                                        <p class="vacansy__cnt-text">Оформление по ТК РФ</p>
+                                    </li>
+                                    <li class="vacansy__cnt-item">
+                                        <p class="vacansy__cnt-text">Профессиональный и карьерный рост</p>
+                                    </li>
+                                    <li class="vacansy__cnt-item">
+                                        <p class="vacansy__cnt-text">Достойная заработная плата</p>
+                                    </li>
+                                    <li class="vacansy__cnt-item">
+                                        <p class="vacansy__cnt-text">Полный соц. пакет (ДМС и др.)</p>
+                                    </li>
+                                    <li class="vacansy__cnt-item">
+                                        <p class="vacansy__cnt-text">Корпоративное питание</p>
+                                    </li>
+                                    <li class="vacansy__cnt-item">
+                                        <p class="vacansy__cnt-text">Корпоративный транспорт</p>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <button class=" mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent vacansy__btn">Откликнуться на вакансию</button>
+                            <button class="vacansy__btn vacansy__btn--grey">Скачать анкету соискателя</button>
+                        </div>
+                    </article>
+
+                    <article class="vacansy__item">
+                        <div class="vacansy__top">
+                            <div class="vacansy__ttl">Менеджер по производству</div>
+                            <button class="vacansy__close js-close"></button>
+                        </div>
+                        <div class="vacansy__descr">
+                            <div class="vacansy__cnt-block">
+                                <p class="vacansy__cnt vacansy__cnt--bold">Требования</p>
+                                <ul>
+                                    <li class="vacansy__cnt-item">
+                                        <p class="vacansy__cnt-text">Техническое образование или опыт работы на производстве</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="vacansy__cnt-block">
+                                <div class="vacansy__cnt vacansy__cnt--bold">Условия труда:</div>
+                                <ul>
+                                    <li class="vacansy__cnt-item">
+                                        <p class="vacansy__cnt-text">Оформление по ТК РФ</p>
+                                    </li>
+                                    <li class="vacansy__cnt-item">
+                                        <p class="vacansy__cnt-text">Профессиональный и карьерный рост</p>
+                                    </li>
+                                    <li class="vacansy__cnt-item">
+                                        <p class="vacansy__cnt-text">Достойная заработная плата</p>
+                                    </li>
+                                    <li class="vacansy__cnt-item">
+                                        <p class="vacansy__cnt-text">Полный соц. пакет (ДМС и др.)</p>
+                                    </li>
+                                    <li class="vacansy__cnt-item">
+                                        <p class="vacansy__cnt-text">Корпоративное питание</p>
+                                    </li>
+                                    <li class="vacansy__cnt-item">
+                                        <p class="vacansy__cnt-text">Корпоративный транспорт</p>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <button class=" mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent vacansy__btn">Откликнуться на вакансию</button>
+                            <button class="vacansy__btn vacansy__btn--grey">Скачать анкету соискателя</button>
+                        </div>
+                    </article>
+
+                    <article class="vacansy__item">
+                        <div class="vacansy__top">
+                            <div class="vacansy__ttl">Водитель погрузчика</div>
+                            <button class="vacansy__close js-close"></button>
+                        </div>
+                        <div class="vacansy__descr">
+                            <div class="vacansy__cnt-block">
+                                <p class="vacansy__cnt vacansy__cnt--bold">Требования</p>
+                                <ul>
+                                    <li class="vacansy__cnt-item">
+                                        <p class="vacansy__cnt-text">Техническое образование или опыт работы на производстве</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="vacansy__cnt-block">
+                                <div class="vacansy__cnt vacansy__cnt--bold">Условия труда:</div>
+                                <ul>
+                                    <li class="vacansy__cnt-item">
+                                        <p class="vacansy__cnt-text">Оформление по ТК РФ</p>
+                                    </li>
+                                    <li class="vacansy__cnt-item">
+                                        <p class="vacansy__cnt-text">Профессиональный и карьерный рост</p>
+                                    </li>
+                                    <li class="vacansy__cnt-item">
+                                        <p class="vacansy__cnt-text">Достойная заработная плата</p>
+                                    </li>
+                                    <li class="vacansy__cnt-item">
+                                        <p class="vacansy__cnt-text">Полный соц. пакет (ДМС и др.)</p>
+                                    </li>
+                                    <li class="vacansy__cnt-item">
+                                        <p class="vacansy__cnt-text">Корпоративное питание</p>
+                                    </li>
+                                    <li class="vacansy__cnt-item">
+                                        <p class="vacansy__cnt-text">Корпоративный транспорт</p>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <button class=" mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent vacansy__btn">Откликнуться на вакансию</button>
+                            <button class="vacansy__btn vacansy__btn--grey">Скачать анкету соискателя</button>
+                        </div>
+                    </article>
+
+                    <article class="vacansy__item">
+                        <div class="vacansy__top">
+                            <div class="vacansy__ttl">Электрик</div>
+                            <button class="vacansy__close js-close"></button>
+                        </div>
+                        <div class="vacansy__descr ">
+                            <div class="vacansy__cnt-block">
+                                <p class="vacansy__cnt vacansy__cnt--bold">Требования</p>
+                                <ul>
+                                    <li class="vacansy__cnt-item">
+                                        <p class="vacansy__cnt-text">Техническое образование или опыт работы на производстве</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="vacansy__cnt-block">
+                                <div class="vacansy__cnt vacansy__cnt--bold">Условия труда:</div>
+                                <ul>
+                                    <li class="vacansy__cnt-item">
+                                        <p class="vacansy__cnt-text">Оформление по ТК РФ</p>
+                                    </li>
+                                    <li class="vacansy__cnt-item">
+                                        <p class="vacansy__cnt-text">Профессиональный и карьерный рост</p>
+                                    </li>
+                                    <li class="vacansy__cnt-item">
+                                        <p class="vacansy__cnt-text">Достойная заработная плата</p>
+                                    </li>
+                                    <li class="vacansy__cnt-item">
+                                        <p class="vacansy__cnt-text">Полный соц. пакет (ДМС и др.)</p>
+                                    </li>
+                                    <li class="vacansy__cnt-item">
+                                        <p class="vacansy__cnt-text">Корпоративное питание</p>
+                                    </li>
+                                    <li class="vacansy__cnt-item">
+                                        <p class="vacansy__cnt-text">Корпоративный транспорт</p>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <button class=" mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent vacansy__btn">Откликнуться на вакансию</button>
+                            <button class="vacansy__btn vacansy__btn--grey">Скачать анкету соискателя</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer class="footer">
-            <div class="container">
-                <p class="footer__slogan">Получи свою порцию волшебства<br>от Galeries Lafayette!</p>
-                <button class="btn js-btn">Получить ваучеры</button>
-                <div class="footer__shedule">
-                    <div class="footer__shedule-left">
-                        <img src="img/logo-small.png" class="mb15">
-                        <div class="footer__txt">
-                            <span class="bold">Адрес:</span> <br>40, boulevard Haussmann<br>
-                            75009 PARIS
-                        </div>
-                    </div>
-                    <div class="footer__shedule-right">
-                        <div class="footer__shedule-ttl">График работы:</div>
-                        <div class="footer__shedule-tbl">
-                            <div class="footer__shedule-row">
-                                <div class="footer__shedule-cell footer__txt bold">
-                                    Магазин Купол,<br>
-                                    Магазин для Мужчин,<br>
-                                    Магазин для Дома:
-                                </div>
-                                <div class="footer__shedule-cell footer__txt bold">
-                                    Магазин Гурмэ:
-                                </div>
-                            </div>
-                            <div class="footer__shedule-row">
-                                <div class="footer__shedule-cell">
-                                    <div class="tbl-small">
-                                        <div class="tbl-small-row">
-                                            <div class="tbl-small-cell footer__txt">ПН-СБ:</div>
-                                            <div class="tbl-small-cell footer__txt">09:30—20:30</div>
-                                        </div>
-                                        <div class="tbl-small-row">
-                                            <div class="tbl-small-cell footer__txt">ВС:</div>
-                                            <div class="tbl-small-cell footer__txt">11:00–19:00</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="footer__shedule-cell">
-                                    <div class="tbl-small">
-                                        <div class="tbl-small-row">
-                                            <div class="tbl-small-cell footer__txt">ПН-СБ:</div>
-                                            <div class="tbl-small-cell footer__txt">08:30—21:30</div>
-                                        </div>
-                                        <div class="tbl-small-row">
-                                            <div class="tbl-small-cell footer__txt">ВС:</div>
-                                            <div class="tbl-small-cell footer__txt">11:00–19:00</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        <div class="container">
+            <div class="footer-menu footer-menu-m">
+                <div class="footer-menu__block">
+                    <a class="footer-menu__ttl js-open-menu">О компании</a>
+                    <ul class="footer-menu__list">
+                        <li class="footer-menu__item">
+                            <a href="#" class="footer-menu__link">История</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="about.html#princip" class="footer-menu__link">Принципы</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="about.html#security" class="footer-menu__link">Охрана труда</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#" class="footer-menu__link">Контакты</a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="footer__note">
-                    <p class="footer__txt">Уважаемые пользователи!</p>
-                    <p class="footer__txt">При возникновении вопросов или технических
-                        проблем напишите нам на адрес academy@profi.travel.</p>
-                    <p class="footer__txt">Мы поможем!</p>
+
+                <div class="footer-menu__block">
+                    <a class="footer-menu__ttl js-open-menu">Технологии</a>
+                    <ul class="footer-menu__list">
+                        <li class="footer-menu__item">
+                            <a href="#" class="footer-menu__link">Экологический менеджмент</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#" class="footer-menu__link">Контроль качества</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-menu__block">
+                    <a class="footer-menu__ttl js-open-menu">Карьера</a>
+                    <ul class="footer-menu__list">
+                        <li class="footer-menu__item">
+                            <a href="#" class="footer-menu__link">Преимущества</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#" class="footer-menu__link">Вакансии</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-menu__block">
+                    <a class="footer-menu__ttl js-open-menu">Наша продукция</a>
+                    <ul class="footer-menu__list">
+                        <li class="footer-menu__item">
+                            <a href="#" class="footer-menu__link">ESSE Original</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#" class="footer-menu__link">ESSE Premium</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#" class="footer-menu__link">ESSE Exchange</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#" class="footer-menu__link">ESSE Cafe</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#" class="footer-menu__link">ESSE Mini</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#" class="footer-menu__link">ESSE Bloomberg</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-menu__block">
+                    <a class="footer-menu__ttl js-open-menu">Партнерам</a>
+                    <ul class="footer-menu__list">
+                        <li class="footer-menu__item">
+                            <a href="#" class="footer-menu__link">Специальные предложения</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#" class="footer-menu__link">Вопросы и ответы</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </footer>
-    <div class="footer__bot">
-        <div class="container">
-        <img src="img/profi-travel.png" class="footer__bot-img">
-        <p class="footer__bot-txt">Проект компании ООО "Профи Трэвел" 2016</p>
+
+            <div class="footer-menu footer-menu-d">
+                <div class="footer-menu__block">
+                    <p class="footer-menu__ttl ">О компании</p>
+                    <ul class="footer-menu__list">
+                        <li class="footer-menu__item">
+                            <a href="about.html#history" class="footer-menu__link">История</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="about.html#princip" class="footer-menu__link">Принципы</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="about.html#security" class="footer-menu__link">Охрана труда</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#" class="footer-menu__link">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-menu__block">
+                    <p class="footer-menu__ttl ">Технологии</p>
+                    <ul class="footer-menu__list">
+                        <li class="footer-menu__item">
+                            <a href="about.html#ecology" class="footer-menu__link">Экологический менеджмент</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#" class="footer-menu__link">Контроль качества</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-menu__block">
+                    <p class="footer-menu__ttl ">Карьера</p>
+                    <ul class="footer-menu__list">
+                        <li class="footer-menu__item">
+                            <a href="#" class="footer-menu__link">Преимущества</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#" class="footer-menu__link">Вакансии</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-menu__block">
+                    <p class="footer-menu__ttl ">Наша продукция</p>
+                    <ul class="footer-menu__list">
+                        <li class="footer-menu__item">
+                            <a href="#" class="footer-menu__link">ESSE Original</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#" class="footer-menu__link">ESSE Premium</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#" class="footer-menu__link">ESSE Exchange</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#" class="footer-menu__link">ESSE Cafe</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#" class="footer-menu__link">ESSE Mini</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#" class="footer-menu__link">ESSE Bloomberg</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-menu__block ">
+                    <p class="footer-menu__ttl ">Партнерам</p>
+                    <ul class="footer-menu__list">
+                        <li class="footer-menu__item">
+                            <a href="#" class="footer-menu__link">Специальные предложения</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#" class="footer-menu__link">Вопросы и ответы</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bot">
+                <div class="footer-bot__logo">
+                    <img src="img/logo-small.png">
+                </div>
+                <p class="footer-bot__copyright">&copy; 2010 KT&G Russia. Все права защищены.</p>
+
+                <div class="footer-bot__social">
+                    <div class="footer-bot__social-item">
+                        <a href="#" class="footer-bot__social-link social-fb"></a>
+                    </div>
+                    <div class="footer-bot__social-item">
+                        <a href="#" class="footer-bot__social-link social-tw"></a>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+        
 
-    <div class="overlay hidden">
-        <div class="popup">
-            <div class="voucher__box-ttl">Прекрасно!</div>
-            <p class="voucher__box-text">Ваучеры уже скачиваются на ваш компьютер.</p>
-            <p class="voucher__box-descr">Распечатайте их и отправляйтесь в арктическую рождественскую сказку Galeries Lafayette. </p>
-            <button class="btn btn--black js-btn-close">OK</button>
-        </div>
-    </div>
+    </footer>
+</div>
 
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/material.min.js"></script>
 <script>
+    $(document).ready(function(){
+        $('.js-close').click(function(){
+            if(!$(this).closest('.vacansy__item').hasClass('active')){
+                $('.vacansy__item').removeClass('active');
+                $('.js-close').removeClass('clicked');
+                $('.vacansy__descr').slideUp();
+                $(this).closest('.vacansy__item').addClass('active').find('.vacansy__descr').slideDown(200);
+                $(this).addClass('clicked');
+            } else {
+                $(this).closest('.vacansy__item').removeClass('active').find('.vacansy__descr').slideUp();
+                $(this).removeClass('clicked');
+            }
+        });
 
-    $('.js-btn').on('click', function () {
-        $('.overlay').removeClass('hidden');
+        $('.js-open-menu').click(function(){
+            if(!$(this).closest('.footer-menu__block').hasClass('active')){
+                $('.footer-menu__block').removeClass('active');
+                $('.footer-menu__list').slideUp();
+                $(this).closest('.footer-menu__block').addClass('active').find('.footer-menu__list').slideDown(200);
+            } else {
+                $(this).closest('.footer-menu__block').removeClass('active').find('.footer-menu__list').slideUp();
+            }
+        });
+
+        $('.js-open-topmenu').on('click', function () {
+            if(!$(this).hasClass('active')) {
+                $('.header-menu').slideDown(400);
+                $(this).addClass('active');
+            } else {
+                $('.header-menu').slideUp();
+                $(this).removeClass('active');
+            }
+
+        });
+
+
+
+        //уменьшение меню
+        var qqq = 736;
+        $(function(){
+            var top = $(this).scrollTop();
+
+            if(top > qqq){
+                $('.header-hide-menu').addClass('show');
+            }
+            $(window).scroll(function(){
+                top = $(this).scrollTop();
+                if (top>qqq) {
+                    $('.header-hide-menu').addClass('show');
+
+                } else {
+                    $('.header-hide-menu').removeClass('show');
+                }
+            });
+        });
     });
 
-     $('.js-btn-close').on('click', function () {
-            $('.overlay').addClass('hidden');
-     });
-
 </script>
+
+
+
 </body>

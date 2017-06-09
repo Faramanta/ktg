@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>KT&G</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/material.indigo-pink.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/datepicker.css">
+</head>
+<body>
+    <div class="wrapper wrapper-in">
+        <div class="header-cont">
+            <header class="header">
+                <div class="top-header">
+                    <div class="header__logo">
+                        <a href="index.html"><img src="img/logo.png"></a>
+                    </div>
+                    <nav class="in-menu">
+                        <ul class="in-menu__list">
+                            <li class="in-menu__item">
+                                <a href="about.html" class="in-menu__link ">О компании</a>
+                            </li>
+                            <li class="in-menu__item">
+                                <a href="products.html" class="in-menu__link ">Наша продукция</a>
+                            </li>
+                            <li class="in-menu__item">
+                                <a href="#" class="in-menu__link ">Технологии</a>
+                            </li>
+                            <li class="in-menu__item">
+                                <a href="#" class="in-menu__link ">Работайте с нами</a>
+                            </li>
+                            <li class="in-menu__item">
+                                <a href="#" class="in-menu__link ">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <a href="#" class="header__auth">
+                        <img src="img/user.png" class="header__auth-icon">
+                    </a>
+                </div>
+            </header>
+            <div class="sub-menu sub-menu-auth">
+                <div class="sub-menu__list sub-menu__list-reg">
+                    <div class="sub-menu__item ">
+                        <a href="#" class="sub-menu__link sub-menu__link--bold ">Вход</a>
+                    </div>
+                    <div class="sub-menu__item ">
+                        <a href="#" class="sub-menu__link sub-menu__link--bold active">Регистрация</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <main class="main">
+        <section class="registation registation__top">
+            <h2 class="registation__ttl">Добро пожаловать</h2>
+            <p class="registation__cnt">Быстрая регистрация через социальные сети</p>
+            <div class="registation__soc-block">
+                <a href="#" class="registation__soc-link registation__soc-link--fb mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"></a>
+                <a href="#" class="registation__soc-link registation__soc-link--vk mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"></a>
+            </div>
+        </section>
+        <section class="registation registation__form">
+
+            <div class="form__block">
+                <p class="registation__cnt">Регистрация с предоставлением документов*</p>
+                <form action="#!" class="form-reg">
+                    <div class="form-reg__top">
+                        <div class="form-reg__line">
+                            <div class="form-reg__block">
+                                <p class="form-reg__text">Как вас зовут?</p>
+                                <span class="input input--first input--akira">
+                                    <input class="input__field input__field--akira" type="text" id="input-name">
+                                    <label class="input__label input__label--akira" for="input-name">
+                                        <span class="input__label-content input__label-content--akira">Имя</span>
+                                    </label>
+                                </span>
+                            </div>
+                            <div class="form-reg__block">
+                                <span class="input input--akira">
+                                    <input class="input__field input__field--akira" type="text" id="input-surname">
+                                    <label class="input__label input__label--akira" for="input-surname">
+                                        <span class="input__label-content input__label-content--akira">Фамилия</span>
+                                    </label>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="form-reg__line">
+                            <div class="form-reg__block">
+                                <p class="form-reg__text">Укажите дату рождения</p>
+                                <span class="input input--first input--akira">
+                                    <input class="input__field input__field--akira datepicker-here"  data-auto-close="true" type="text" id="input-birthday">
+                                    <label class="input__label input__label--akira" for="input-birthday">
+                                        <span class="input__label-content input__label-content--akira ">ДД.ММ.ГГ</span>
+                                    </label>
+                                </span>
+                            </div>
+                            <div class="form-reg__block">
+                                <p class="form-reg__text">Откуда вы?</p>
+                                <span class="input input--akira">
+                                    <input class="input__field input__field--akira" type="email" id="input-city">
+                                    <label class="input__label input__label--akira" for="input-city">
+                                        <span class="input__label-content input__label-content--akira">Город</span>
+                                    </label>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="form-reg__line">
+                            <div class="form-reg__block">
+                                <p class="form-reg__text">Укажите ваш телефон</p>
+                                <span class="input input--first input--akira">
+                                    <input class="input__field input__field--akira" type="tel" id="input-phone" >
+                                    <label class="input__label input__label--akira" for="input-phone">
+                                        <span class="input__label-content input__label-content--akira">+7 ХХХ ХХХ ХХ ХХ</span>
+                                    </label>
+                                </span>
+                            </div>
+                            <div class="form-reg__block">
+                                <p class="form-reg__text">Укажите ваш e-mail</p>
+                                <span class="input input--akira">
+                                    <input class="input__field input__field--akira" type="email" id="input-email" >
+                                    <label class="input__label input__label--akira" for="input-email">
+                                        <span class="input__label-content input__label-content--akira">user@usermail.com</span>
+                                    </label>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="form-reg__line">
+                            <div class="form-reg__block">
+                                <p class="form-reg__text">Пароль</p>
+                                <span class="input input--first input--akira">
+                                    <input class="input__field input__field--akira" type="password" id="input-pass" >
+                                    <label class="input__label input__label--akira" for="input-pass">
+                                        <span class="input__label-content input__label-content--akira">Пароль</span>
+                                    </label>
+                                </span>
+                            </div>
+                            <div class="form-reg__block">
+                                <p class="form-reg__text">Подтвердите пароль</p>
+                                <span class="input input--akira">
+                                    <input class="input__field input__field--akira" type="password" id="input-pass2" >
+                                    <label class="input__label input__label--akira" for="input-pass2">
+                                        <span class="input__label-content input__label-content--akira">Пароль</span>
+                                    </label>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-reg__bot">
+                        <div class="form-reg__line">
+                            <div class="form-reg__block">
+                                <p class="form-reg__text">Какие сигареты вы курите чаще всего?</p>
+                                <span class="input input--first input--akira">
+                                    <input class="input__field input__field--akira" type="email" id="input-brand" >
+                                    <label class="input__label input__label--akira" for="input-brand">
+                                        <span class="input__label-content input__label-content--akira">Марка</span>
+                                    </label>
+                                </span>
+                            </div>
+                            <div class="form-reg__block">
+                                <span class="input input--akira">
+                                    <input class="input__field input__field--akira" type="email" id="input-format" >
+                                    <label class="input__label input__label--akira" for="input-format">
+                                        <span class="input__label-content input__label-content--akira">Формат</span>
+                                    </label>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="form-reg__cbx-block">
+                            <label class="form-reg__label-cbx">
+                                <input type="checkbox" class="form-reg__checkbox" checked>
+                                <span class="form-reg__sp"><i class="icon icon--circle"></i></span>
+                                <a href="" class="form-reg__text form-reg__cbx-text">Я ознакомлен и согласен с правилами пользования сайта и условиями обработки моих персональных данных</a>
+                            </label>
+                        </div>
+                        <div class="form-reg__btn">
+                            <button class="news__btn mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Зарегистрироваться</button>
+
+                            <p class="form-reg__note">* Водительское удостоверение, социальная Карта  Москвича, ISIC, заграничный паспорт, паспорт, военный билет гражданина РФ.</p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+</div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-menu">
+                <div class="footer-menu__block">
+                    <p class="footer-menu__ttl">О компании</p>
+                    <ul class="footer-menu__list">
+                        <li class="footer-menu__item">
+                            <a href="about.html#history" class="footer-menu__link">История</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="about.html#princip" class="footer-menu__link">Принципы</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="about.html#security" class="footer-menu__link">Охрана труда</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#" class="footer-menu__link">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-menu__block">
+                    <p class="footer-menu__ttl">Технологии</p>
+                    <ul class="footer-menu__list">
+                        <li class="footer-menu__item">
+                            <a href="about.html#ecology" class="footer-menu__link">Экологический менеджмент</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#" class="footer-menu__link">Контроль качества</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-menu__block">
+                    <p class="footer-menu__ttl">Карьера</p>
+                    <ul class="footer-menu__list">
+                        <li class="footer-menu__item">
+                            <a href="#" class="footer-menu__link">Преимущества</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#" class="footer-menu__link">Вакансии</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-menu__block">
+                    <p class="footer-menu__ttl">Наша продукция</p>
+                    <ul class="footer-menu__list">
+                        <li class="footer-menu__item">
+                            <a href="#" class="footer-menu__link">ESSE Original</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#" class="footer-menu__link">ESSE Premium</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#" class="footer-menu__link">ESSE Exchange</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#" class="footer-menu__link">ESSE Cafe</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#" class="footer-menu__link">ESSE Mini</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#" class="footer-menu__link">ESSE Bloomberg</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-menu__block">
+                    <p class="footer-menu__ttl ">Партнерам</p>
+                    <ul class="footer-menu__list">
+                        <li class="footer-menu__item">
+                            <a href="#" class="footer-menu__link">Специальные предложения</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#" class="footer-menu__link">Вопросы и ответы</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bot">
+                <div class="footer-bot__logo">
+                    <img src="img/logo-small.png">
+                </div>
+                <p class="footer-bot__copyright">&copy; 2010 KT&G Russia. Все права защищены.</p>
+
+                <div class="footer-bot__social">
+                    <div class="footer-bot__social-item">
+                        <a href="#" class="footer-bot__social-link social-fb"></a>
+                    </div>
+                    <div class="footer-bot__social-item">
+                        <a href="#" class="footer-bot__social-link social-tw"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/material.min.js"></script>
+<script type="text/javascript" src="js/menu.js"></script>
+<script type="text/javascript" src="js/classie.js"></script>
+<script type="text/javascript" src="js/datepicker.js"></script>
+<script>
+    (function() {
+        if (!String.prototype.trim) {
+            (function() {
+                var rtrim = /^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g;
+                String.prototype.trim = function() {
+                    return this.replace(rtrim, '');
+                };
+            })();
+        }
+        [].slice.call( document.querySelectorAll( 'input.input__field' ) ).forEach( function( inputEl ) {
+            if( inputEl.value.trim() !== '' ) {
+                classie.add( inputEl.parentNode, 'input--filled' );
+            }
+            // events:
+            inputEl.addEventListener( 'focus', onInputFocus );
+            inputEl.addEventListener( 'blur', onInputBlur );
+        } );
+        function onInputFocus( ev ) {
+            classie.add( ev.target.parentNode, 'input--filled' );
+        }
+        function onInputBlur( ev ) {
+            if( ev.target.value.trim() === '' ) {
+                setTimeout(function () {
+                    classie.remove( ev.target.parentNode, 'input--filled' );
+                },120);
+            }
+        }
+    })();
+
+
+</script>
+
+
+
+</body>
