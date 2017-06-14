@@ -1,6 +1,4 @@
 $(document).ready(function(){
-
-
     //Плавная прокрутка до якоря
     $('.js-sub-menu').on('click','a', function (event) {
         event.preventDefault();
@@ -23,10 +21,7 @@ $(document).ready(function(){
             $(this).addClass('active');
         }
     });
-
-
 });
-
 
 var _scrollTop;
 $(window).scroll(function(){
@@ -52,7 +47,6 @@ $(window).scroll(function(){
             }
         });
     });
-
 });
 
 // активный пункт меню
@@ -93,7 +87,6 @@ function scroll_active2() {
     var ecology_top = $('section[id="ecology"]').offset().top-80;
     var logo_top = $('section[id="logo"]').offset().top-80;
     var security_top = $('section[id="security"]').offset().top-80;
-
 
     if (window_top > history_top) {
         $('.sub-menu__link').removeClass('active');

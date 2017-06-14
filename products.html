@@ -1069,7 +1069,7 @@
         <div class="container">
             <div class="footer-menu ">
                 <div class="footer-menu__block">
-                    <p class="footer-menu__ttl js-open-menu">О компании</p>
+                    <p class="footer-menu__ttl ">О компании</p>
                     <ul class="footer-menu__list">
                         <li class="footer-menu__item">
                             <a href="about.html#history2" class="footer-menu__link">История</a>
@@ -1111,7 +1111,7 @@
                 </div>
 
                 <div class="footer-menu__block">
-                    <p class="footer-menu__ttl js-open-menu">Технологии</p>
+                    <p class="footer-menu__ttl ">Технологии</p>
                     <ul class="footer-menu__list">
                         <li class="footer-menu__item">
                             <a href="#" class="footer-menu__link">Контроль качества</a>
@@ -1126,7 +1126,7 @@
                 </div>
 
                 <div class="footer-menu__block">
-                    <p class="footer-menu__ttl js-open-menu">Партнерам</p>
+                    <p class="footer-menu__ttl ">Партнерам</p>
                     <ul class="footer-menu__list">
                         <li class="footer-menu__item">
                             <a href="#" class="footer-menu__link">Специальные предложения</a>
@@ -1138,7 +1138,7 @@
                 </div>
 
                 <div class="footer-menu__block">
-                    <p class="footer-menu__ttl js-open-menu">Карьера</p>
+                    <p class="footer-menu__ttl ">Карьера</p>
                     <ul class="footer-menu__list">
                         <li class="footer-menu__item">
                             <a href="#" class="footer-menu__link">Преимущества</a>
@@ -1195,7 +1195,6 @@
 </svg>
                 </div>
                 <p class="footer-bot__copyright">&copy; 2010 KT&G Russia. Все права защищены.</p>
-
                 <div class="footer-bot__social">
                     <div class="footer-bot__social-item">
                         <a href="#" class="footer-bot__social-link social-fb"></a>
@@ -1208,24 +1207,10 @@
         </div>
     </footer>
 
-
 <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="js/material.min.js"></script>
 <script type="text/javascript" src="js/menu.js"></script>
 <script>
-    $(document).ready(function(){
-        $('.js-open-menu').click(function(){
-            if(!$(this).closest('.footer-menu__block').hasClass('active')){
-                $('.footer-menu__block').removeClass('active');
-                $('.footer-menu__list').slideUp();
-                $(this).closest('.footer-menu__block').addClass('active').find('.footer-menu__list').slideDown(200);
-            } else {
-                $(this).closest('.footer-menu__block').removeClass('active').find('.footer-menu__list').slideUp();
-            }
-        });
-    });
-
     jQuery(window).scroll(scroll_active);
-
 </script>
 </body>

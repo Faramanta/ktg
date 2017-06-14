@@ -471,7 +471,7 @@ ul {
 }
 
 .main-action__cell:first-child .main-action__img {
-    background: url("../img/action.jpg") no-repeat;
+    background: url("../img/esse_main_contest.jpg") no-repeat;
     width: 100%;
     height: 100%;
     background-size: cover;
@@ -1000,6 +1000,7 @@ ul {
 .one .prod__about {
     background-color: #ffffff;
 }
+
 .one .prod__about__block {
     background-color: #ffffff;
     color: #0b2050;
@@ -1776,8 +1777,6 @@ ul {
 
 .hidden {
     display: none;
-}
-
 }
 
 @media screen and (max-width: 1150px) {
