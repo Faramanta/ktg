@@ -25,6 +25,7 @@
 *{
     padding: 0;
     margin: 0;
+    outline: none;
 }
 
 html{
@@ -268,6 +269,7 @@ ul {
     transition: all 0.3s;
 }
 
+
 .sub-menu-about .sub-menu__link {
     padding: 50px 20px;
 }
@@ -281,6 +283,11 @@ ul {
     background: #ccab6c;
     color: #ffffff;
 }
+
+.sub-menu__link:hover {
+    background: rgba(204,171,108,0.5);
+}
+
 
 .sub-menu__item.small {
     height: 60px;
@@ -634,11 +641,11 @@ ul {
 .vacansy__close:after {
     position: absolute;
     content: '';
-    width: 22px;
-    height: 22px;
-    top: 26px;
-    right: 24px;
-    background: url(../img/add2.svg) -7px -7px;
+    width: 21px;
+    height: 21px;
+    top: 25px;
+    right: 25px;
+    background: url(../img/plus.svg) -1px;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
 }
@@ -1903,5 +1910,11 @@ ul {
 @media screen and (max-width: 479px) {
     .vacansy__ttl {
         font-size: 20px;
+    }
+    .vacansy__btn {
+        width: 100%;
+    }
+    .hide {
+        display: none;
     }
 }

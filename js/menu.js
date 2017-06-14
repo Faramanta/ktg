@@ -6,14 +6,14 @@ $(document).ready(function(){
         event.preventDefault();
         var id  = $(this).attr('href'),
             top = $(id).offset().top;
-        $('body,html').animate({scrollTop: top-170}, 1500);
+        $('body,html').animate({scrollTop: top-170}, 1000);
     });
 
     $('.js-menu-about').on('click','a', function (event) {
         event.preventDefault();
         var id  = $(this).attr('href'),
             top = $(id).offset().top;
-        $('body,html').animate({scrollTop: top-40}, 1500);
+        $('body,html').animate({scrollTop: top-40}, 1000);
     });
 
 // активный пункт меню
