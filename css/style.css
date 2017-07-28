@@ -41,6 +41,8 @@ body{
     line-height: normal;
     font-weight: normal;
     font-family: 'RobotoSlab', sans-serif;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
 }
 
 .wrapper {
