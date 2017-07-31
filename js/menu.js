@@ -23,11 +23,12 @@ $(document).ready(function(){
     });
 });
 
-var _scrollTop;
-$(window).scroll(function(){
-    _scrollTop = $(window).scrollTop();
 
 //уменьшение меню
+function small_menu () {
+    var _scrollTop;
+    _scrollTop = $(window).scrollTop();
+
     var h_header = 60;
     $(function(){
         var top = $(this).scrollTop();
@@ -47,7 +48,10 @@ $(window).scroll(function(){
             }
         });
     });
-});
+}
+
+$(document).ready(small_menu);
+$(window).on('scroll', small_menu);
 
 // активный пункт меню
 function scroll_active() {
